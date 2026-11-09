@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const shell = window.appShell || {};
   const hostname = window.location.hostname;
-  const apiBase = `http://${hostname}:5000/api/v1`;
+  const apiBase = `${window.location.origin}/api/v1`;
   const logsEndpoint = `${apiBase}/logs/?limit=1000`;
 
   const tableBody = document.querySelector(".js-Logs");
