@@ -104,11 +104,11 @@ Dit is een afgeleide aanwezigheid op basis van registraties. Een gemiste scan of
 
 | Onderdeel | Aanwezige mogelijkheden |
 | --- | --- |
-| Systeemlogs in de webapp | Zoeken, filteren op logtype, pagineren, CSV-export en afdrukken via de browser. Dit betreft de opgehaalde logs, geen onbeperkt historisch archief. |
+| Systeemlogs in de webapp | Zoeken, filteren op logtype, pagineren, CSV-export en afdrukken via de browser. Bovenaan **Logs** kunnen beheerders ook de actieve MQTT-instellingen en de laatste 30 gebeurtenissen sinds de start van de listener bekijken, zoals verbinding, ontvangst van een badge-event en resultaat van de API-opslag. Het MQTT-wachtwoord wordt alleen als ingesteld of niet ingesteld getoond. |
 | LoxBerry-startpagina | Gebruikers opvragen en toevoegen, API-verbinding testen en backend-URL en interne API-sleutel instellen. De statuswissel op deze pagina heeft een aansluitingsprobleem; zie §4. |
 | LoxBerry-instellingen | Docker-containers starten, stoppen, herstarten en hun status opvragen. |
 | Configuratie bewerken | Instellingen-JSON en Docker Compose als ruwe tekst aanpassen. |
-| Technische logs | Docker-, MQTT- en applicatielogs bekijken en leegmaken; ook containeruitvoer van de MQTT-listener raadplegen. De logpagina vernieuwt om de dertig seconden. |
+| Technische logs | Docker-, MQTT- en applicatielogs bekijken en leegmaken. Bij **Logs → Diagnose Miniserver-koppeling** staan de listenerstatus, broker, topics en MQTT-gebruikersnaam. De pagina toont alleen of een wachtwoord is ingesteld. De containeruitvoer verbergt herhaalde heartbeats; de pagina vernieuwt om de dertig seconden. |
 | Healthcheck | API-route die de databaseverbinding test. |
 | API-documentatie | Swagger-interface onder `/docs/` en een specificatie onder `/apispec.json`. Niet alle routes hebben even uitgebreide beschrijvingen. |
 | Installatie | LoxBerry-installatiescripts en Docker Compose voor MongoDB, MQTT-listener, Flask-backend en Nginx-webapp. MongoDB gebruikt een persistent volume. |
